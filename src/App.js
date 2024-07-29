@@ -1,9 +1,12 @@
 import './App.css';
+import Body from './Components/Body';
+import { Provider } from 'react-redux';
+import appstore from './utils/appstore';
 function App() {
   return (
-    <div>
-      <h1 className='text-3xl text-green-300'>HEllo</h1>
-    </div>
+    <Provider store={appstore}>
+      <Body></Body>
+    </Provider>
     
   );
 }
