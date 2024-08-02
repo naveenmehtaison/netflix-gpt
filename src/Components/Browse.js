@@ -1,13 +1,18 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Header } from './Header'
 import { useDispatch, useSelector } from 'react-redux'
 import UseMovies from '../Hooks/UseMovies'
 import { mainmovie } from '../utils/movieslice'
 import { MainContainer } from './MainContainer'
-
+import UsePopular from '../Hooks/UsePopular'
+import UseTopRated from '../Hooks/UseTopRated'
+import UseUpcoming from '../Hooks/UseUpcoming'
 
 const Browse = () => {
   UseMovies()
+  UsePopular()
+  UseTopRated()
+  UseUpcoming()
   const dispatch = useDispatch()
   const movies_data  = useSelector(state=>state.movie.movies)
   console.log('dispatch check ',movies_data)
@@ -15,7 +20,7 @@ const Browse = () => {
     return
   }
  
-  dispatch(mainmovie(movies_data[0]))
+  dispatch(mainmovie(movies_data[2]))
   
 
   

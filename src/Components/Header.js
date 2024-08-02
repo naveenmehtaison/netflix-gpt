@@ -37,7 +37,7 @@ export const Header = () => {
     })
   }
   return (
-    <div className = 'bg-gradient-to-b absolute from-black shadow-lg  px-8 py-2 z-10 w-screen flex justify-between'>
+    <div className = 'bg-gradient-to-b absolute from-black shadow-lg top-0  px-8 py-2 z-10 w-screen flex justify-between'>
          <img className='w-44' src={LOGO} alt='Header'></img>
         {selector?.uid && <div className='flex gap-4'>
           <img alt='userphoto' className='w-10 h-10 mt-2' src={selector?.photoURL}></img>
