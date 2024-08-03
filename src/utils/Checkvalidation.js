@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
 
 const Checkvalidation = (email, password) => {
     
-    console.log(email,password)
+
     const passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     

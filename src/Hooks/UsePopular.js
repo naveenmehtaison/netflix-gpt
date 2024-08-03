@@ -11,14 +11,6 @@ const UsePopular = () => {
     dispatch(addpopularmovie(data.results))
 
     }
-    // const GetMovies = async () => {
-    //   try {
-    //     const response = await axios.get('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', API_OPTIONS);
-    //     console.log(response.data);
-    //   } catch (error) {
-    //     console.error(error);
-    //   }
-    // };
     useEffect(()=>{
     GetMovies()
 

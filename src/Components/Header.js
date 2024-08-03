@@ -7,7 +7,6 @@ import { adduser,removeuser } from '../utils/userslice';
 import { useEffect } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { LOGO } from '../utils/constants';
-import langslice from '../utils/langslice';
 import { addlanguage } from '../utils/langslice';
 import { showgpt } from '../utils/langslice';
 export const Header = () => {

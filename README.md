@@ -10,4 +10,9 @@
         /map that and when selector is changed
         /update the language
     /add serch bar
+//adding gpt
+    /get the api key 
+    /npm i open ai 
+    /add constants
+    /try to make api call
 

@@ -9,7 +9,7 @@ import UseTopRated from '../Hooks/UseTopRated'
 import UseUpcoming from '../Hooks/UseUpcoming'
 
 import GptPage from './GptPage'
-import GptContent from './GptContent'
+
 
 const Browse = () => {
   UseMovies()

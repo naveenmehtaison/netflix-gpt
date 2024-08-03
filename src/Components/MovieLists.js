@@ -1,9 +1,9 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+
 import MoviePoster from './MoviePoster'
 export const MovieLists = ({props,title}) => {
     // const Selector = useSelector(state=>state.movie.movies)
-    console.log(props)
+
 
   return (
     <div className='-mt-28 mb-32 '>

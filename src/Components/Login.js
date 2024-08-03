@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import Checkvalidation from '../utils/Checkvalidation';
 import { Header } from './Header';
 import { auth } from '../utils/Firebase';
@@ -54,7 +54,7 @@ const Login = () => {
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
-          setMessage(errorCode + '-' + '-'+ errorMessage)
+          setMessage(`${errorCode} + '-' + '-'+ ${errorMessage}`)
           // ..
         });
 
@@ -64,7 +64,7 @@ const Login = () => {
       signInWithEmailAndPassword(auth, email.current.value, password.current.value)
         .then((userCredential) => {
           // Signed in 
-          const user = userCredential.user;
+          // const user = userCredential.user;
 
           // ...
         })

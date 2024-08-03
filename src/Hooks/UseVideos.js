@@ -9,7 +9,6 @@ const UseVideos = (video) => {
     const getVideo = async ()=>{
         const data = await fetch('https://api.themoviedb.org/3/movie' + `/${video}/` + 'videos',API_OPTIONS )
         const json = await data.json()
-        console.log(json.results,video)
 
         const trailervideo = json.results.filter((vid)=>vid.type==='Trailer')
         if(!trailervideo.length){
@@ -22,7 +21,8 @@ const UseVideos = (video) => {
         getVideo()
     },[])
   return (
-    <div>UseVideos</div>
+    <>
+    </>
   )
 }
 

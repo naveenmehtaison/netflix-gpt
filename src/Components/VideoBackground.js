@@ -1,9 +1,9 @@
 import React from 'react'
 import UseVideos from '../Hooks/UseVideos'
-import { API_OPTIONS } from '../utils/constants'
-import { useEffect } from 'react'
+// import { API_OPTIONS } from '../utils/constants'
+// import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import { addvideo } from '../utils/movieslice'
+// import { addvideo } from '../utils/movieslice'
 export const VideoBackground = ({video}) => {
   UseVideos(video)
   const Selector = useSelector(state=>state.movie?.videodata)
