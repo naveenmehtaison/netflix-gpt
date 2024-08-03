@@ -8,3 +8,31 @@ export const API_OPTIONS  = {
     }
 }
 export const POSTERS = 'https://image.tmdb.org/t/p/w500/'
+export const Multilingual = {
+    hindi:{
+        identifier:'hi',
+        search:'खोज',
+        placeholder:'आप क्या देखना चाहते हैं?',
+        submit:'जमा '
+    },
+    en:{
+        indentifier:'en',
+        search:'search',
+        placeholder:'What are you looking for?',
+        submit:'submit'
+
+    },
+    kumaoni:{
+        identifier:'kumauno',
+        search:'ढूंढ',
+        placeholder: 'तैं के देखूं चा छ',
+    },
+    marathi:{
+        identifier:'marathi',
+        search:'शोध',
+        placeholder: 'तुला काय पहायचे आहे?',
+
+    },
+    
+}
+
