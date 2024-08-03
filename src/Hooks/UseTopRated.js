@@ -21,7 +21,7 @@ const UseTopRated= () => {
     // };
     useEffect(()=>{
     GetMovies()
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
   return (
     <div>UsePopular</div>

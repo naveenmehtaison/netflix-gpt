@@ -7,7 +7,7 @@ const UseVideos = (video) => {
 
     const dispatch = useDispatch()
     const getVideo = async ()=>{
-        const data = await fetch('https://api.themoviedb.org/3/movie' + `/${video}/` + 'videos',API_OPTIONS )
+        const data = await fetch(`https://api.themoviedb.org/3/movie/${video}/videos`,API_OPTIONS )
         const json = await data.json()
 
         const trailervideo = json.results.filter((vid)=>vid.type==='Trailer')
@@ -19,6 +19,7 @@ const UseVideos = (video) => {
     }
     useEffect(()=>{
         getVideo()
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
   return (
     <>

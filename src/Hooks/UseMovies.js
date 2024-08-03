@@ -20,7 +20,7 @@ const UseMovie=()=>{
     // };
     useEffect(()=>{
     GetMovies()
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 }
 export default UseMovie
