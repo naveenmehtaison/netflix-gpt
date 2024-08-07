@@ -20,10 +20,10 @@ export const VideoBackground = ({video}) => {
 //   ></iframe>
 // </div>
   return (
-    <div className='w-screen mt-0'>
+    <div className='w-screen md:mt-3'>
 
-      <iframe className='aspect-video   w-screen ' src={"https://www.youtube.com/embed/" + Selector.key + "?autoplay=1&mute=1&modestbranding=1&controls=0&rel=0"}
-       title="YouTube video player" frameborder="0" 
+      <iframe className='aspect-video   w-screen ' src={"https://www.youtube.com/embed/" + Selector?.key + "?autoplay=1&mute=1&modestbranding=1&controls=0&rel=0"}
+       title="YouTube video player" frameBorder="0" 
         allow="autoplay; accelerometer clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
          >
 

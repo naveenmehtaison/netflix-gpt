@@ -5,11 +5,16 @@ import { BG } from '../utils/constants'
 const GptPage = () => {
 
   return (
-    <div className=''>
-      <img alt='bg_image' className='absolute' src={BG}></img>
-      <GptSearch></GptSearch>
-      <GptContent></GptContent>
+    <>
+    <div className='fixed'>
+      <img alt='bg_image' className=' w-screen h-screen object-cover ' src={BG}></img>
+
     </div>
+    <div>
+    <GptSearch></GptSearch>
+    <GptContent></GptContent>
+    </div>
+    </>
   )
 }
 

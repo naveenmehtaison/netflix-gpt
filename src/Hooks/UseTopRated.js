@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { API_OPTIONS } from '../utils/constants'
 import { useEffect } from 'react'
 import { addtopratedmovie } from '../utils/movieslice'
@@ -10,7 +10,9 @@ const UseTopRated= () => {
     const data = await g.json()
     dispatch(addtopratedmovie(data.results))
 
+
     }
+    const selector = useSelector((state)=>state.movie.toprated)
     // const GetMovies = async () => {
     //   try {
     //     const response = await axios.get('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', API_OPTIONS);
@@ -20,7 +22,7 @@ const UseTopRated= () => {
     //   }
     // };
     useEffect(()=>{
-    GetMovies()
+    !selector && GetMovies()
 // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
   return (

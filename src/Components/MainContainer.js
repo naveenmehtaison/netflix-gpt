@@ -10,7 +10,7 @@ export const MainContainer = () => {
     const main_movie  = useSelector(state=>state.movie.leadfilm) 
     const top_rated = useSelector(state=>state.movie.toprated) 
     const upcoming= useSelector(state=>state.movie.upcoming) 
-    console.log(popular_movies)
+
 
     
   return (

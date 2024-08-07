@@ -1,6 +1,6 @@
 import React from 'react'
 import { API_OPTIONS } from '../utils/constants'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { addvideo } from '../utils/movieslice'
 import { useEffect } from 'react'
 const UseVideos = (video) => {
@@ -17,8 +17,9 @@ const UseVideos = (video) => {
 
         dispatch(addvideo(trailervideo[0]))
     }
+    const selector = useSelector((state)=>state.movie.videodata)
     useEffect(()=>{
-        getVideo()
+        !selector && getVideo()
       // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
   return (

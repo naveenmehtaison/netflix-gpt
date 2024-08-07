@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { API_OPTIONS } from '../utils/constants'
 import { useEffect } from 'react'
 import { addupcomingmovie } from '../utils/movieslice'
@@ -11,6 +11,7 @@ const UseUpcoming = () => {
     dispatch(addupcomingmovie(data.results))
 
     }
+    const selector  = useSelector(state=>state.movie.upcoming)
     // const GetMovies = async () => {
     //   try {
     //     const response = await axios.get('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', API_OPTIONS);
@@ -20,7 +21,7 @@ const UseUpcoming = () => {
     //   }
     // };
     useEffect(()=>{
-    GetMovies()
+    !selector && GetMovies()
 // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
   return (

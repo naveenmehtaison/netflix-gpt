@@ -60,7 +60,7 @@ const Login = () => {
 
     }
     else{
-      console.log('sign in')
+
       signInWithEmailAndPassword(auth, email.current.value, password.current.value)
         .then((userCredential) => {
           // Signed in 
@@ -81,7 +81,7 @@ const Login = () => {
   return (
     <>
       <Header />
-      <div className='absolute w-[400px] p-10 my-[20vh] mx-[70vh] bg-black opacity-90'>
+      <div className=' mt-16 absolute md:w-[400px] p-10 md:my-[20vh] md:mx-[70vh] bg-black opacity-90'>
         <h1 className='text-white text-center text-3xl'>{login ? 'Sign In' : 'Sign Up'}</h1>
         <form onSubmit={handleSubmit} className='flex-col p-0'>
           {!login && <input ref={name} className='border-black w-full bg-gray-500 m-2 p-3 rounded-md' placeholder='Name' />}
@@ -93,8 +93,8 @@ const Login = () => {
         <p onClick={() => setLogin(!login)} className='text-white text-center cursor-pointer'>
           {login ? "Didn't have an account" : 'Already have an Account'}
         </p>
-      </div>
-      <img  src={BG} alt='netflixlogo' />
+      </div> 
+      <img className=' w-screen h-screen'  src={BG} alt='netflixlogo' />
     </>
   );
 };

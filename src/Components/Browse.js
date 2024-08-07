@@ -17,11 +17,11 @@ const Browse = () => {
   UseTopRated()
   UseUpcoming()
   const searchBoolean = useSelector(state=>state.language.boolean)
-  console.log(searchBoolean)
+
   const dispatch = useDispatch()
   const movies_data  = useSelector(state=>state.movie.movies)
-  console.log('dispatch check ',movies_data)
-  if(!movies_data.length){
+
+  if(!movies_data){
     return
   }
   dispatch(mainmovie(movies_data[2]))

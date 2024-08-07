@@ -4,10 +4,11 @@ export const API_OPTIONS  = {
     method:"GET",
     headers:{
         accept:'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMjVhNjQ4ZWIwMTNkZDdiYTMxOTEzYjI2NmNjYjg5ZiIsIm5iZiI6MTcyMjEwMTE3MC40MTI3NjksInN1YiI6IjY2YTRlMWI1ZDMyYzY0ODRhYTM2NmRiZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TG61gotwiaBAnf6hld0d8EhfekaUCv5o8nXVc7mayRI'
+        Authorization: 'Bearer '+process.env.REACT_APP_TMDB_KEY
     }
 }
-export const API_KEY = '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'
+export const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?query=taare%20zameen%20par&include_adult=false&language=en-US&page=1' 
+export const API_KEY = process.env.REACT_APP_API_KEY
 export const POSTERS = 'https://image.tmdb.org/t/p/w500/'
 export const Multilingual = {
     hindi:{
