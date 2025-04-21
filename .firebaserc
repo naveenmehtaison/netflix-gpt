@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "netflix-gpt-51013"
-  }
+    "default": "moviemania-3e866",
+    "staging": "moviemania-3e866"
+  },
+  "targets": {},
+  "etags": {}
 }
