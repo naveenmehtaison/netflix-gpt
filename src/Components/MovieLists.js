@@ -1,7 +1,6 @@
 import React from 'react'
 
 import MoviePoster from './MoviePoster'
-import { NavLink } from 'react-router-dom'
 export const MovieLists = ({props,title}) => {
 
   return (
